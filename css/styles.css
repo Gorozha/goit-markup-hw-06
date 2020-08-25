@@ -1108,10 +1108,11 @@ border-radius: 0px 0px 4px 4px;
     padding: 0;
     outline: 1px solid tomato;
 }
+/*стилизация модалки*/
 .form-footer-icon {
     color: var(--white-color);
 }
-/*стилизация модалки*/
+
 
 /*стилизация модалки*/
 .form-field  {
