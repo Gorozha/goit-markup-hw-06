@@ -419,16 +419,17 @@
       <div class="form-footer">
         <form class="form-footer-icon">
               <label for="email" class="form-label-foot">Подпишитесь на рассылку</label> 
-              <span class="btn-telega">
-              <svg  width="32" height="32">
-                <use href="./images/symbol-defs5.svg#icon-telegblack"> alt="icon" </use>
-              </svg>
-            </span>        
+              <!--<span class="btn-telega">-->
+
+            <!--</span>-->        
               <input class="form-input-foot" type="email" name="email" id="email" placeholder="E-mail"/> 
-              <button type="submit" class="foot-btn">Подписаться                
+              <button type="submit" class="foot-btn">Подписаться
+                <svg class="btn-telega" width="32" height="32">
+                    <use href="./images/symbol-defs5.svg#icon-telegblack"> alt="icon" </use>
+                </svg>               
               </button>                 
         </form>        
-      </div>
+      </div>   
   </footer>
 <!--бекдроп для модального окна-->
   <div class="backdrop is-hidden" data-modal>
@@ -477,7 +478,7 @@
         <!--поле ввода комментария в модалке-->
         <div class="form-field-comment">
           <!--<input class="form-input" type="text" name="textarea" id="textarea" placeholder=" ">-->
-          <label for="comment" class="form-label">Комментарий</label>
+          <label for="comment" class="form-label-comment">Комментарий</label>
           <textarea class="comment" name="comment" id="comment" cols="30" rows="10" placeholder=" "></textarea>
         </div>
       

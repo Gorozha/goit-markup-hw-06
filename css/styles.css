@@ -1169,33 +1169,52 @@ border-radius: 0px 0px 4px 4px;
     position: absolute;
     width: 448px;
     height: 138px;
-    padding: 8px;
-    top: 260px;
+    padding: 0;
+    top: 255px;
+    margin-bottom:20px;
     right: 40px;
+    border: 1px solid var(--main-color);
 }
 /**/
 .check {
     position: absolute;
-    top: 70%;
+    top: 437px;
     right: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+}
+textarea {
+    resize: none;
 }
 /**/
 .btn-on {
     position: absolute;
-    top: 90%;
+    top: 491px;
     right: 160px;
     width: 200px;
     height: 50px;
+    margin-bottom: 40px;
     color: var(--white-color);
     background-color: var(--accent-color);
     border-radius: 4px;
 }
 /*поле ввода комментария в модалке*/
-/*.form-field-comment {
+.form-field-comment {
     position: absolute;
-    top: 0;
+    top: 13px;
     right: 0;
-}*/
+    margin-left: auto;
+    margin-right: auto;
+}
+/*поле ввода комментария в модалке*/
+.form-label-comment {
+    position: absolute;
+    top: 225px;
+    right: 350px;
+    color: var(--dark-color);
+}
 .form-input:focus + .form-label,
  .form-input:not(:placeholder-shown) + .form-label {
     transform: translateY(-40px);
@@ -1306,9 +1325,11 @@ border-radius: 0px 0px 4px 4px;
 /*иконка в кнопке подписки*/
 .btn-telega {
     /*position: absolute;*/
-    top: 10px;
+    /*top: 10px;*/
     right: 30px;
     top: 120px;
+    /*top: 50%;
+    transform: translateY(-50%);*/
     right: 245px;
     display: inline-block;
     width: 24px;
