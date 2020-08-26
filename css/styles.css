@@ -1051,7 +1051,7 @@ border-radius: 0px 0px 4px 4px;
 /*стилизация модалки*/
 .modal {
     position: absolute;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     top: 50%;
     left: 50%;
@@ -1060,8 +1060,16 @@ border-radius: 0px 0px 4px 4px;
     max-width: 528px;
     max-height: 581px;
     background-color: #fff;
+    outline: 1px solid tomato;
  
 }
+/* размер модалки */
+/*.js-speaker-form {
+    width: 528px;
+    outline: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+}*/
 /*слой месседж*/
 .message {
     margin-top: 40px;
@@ -1084,8 +1092,8 @@ border-radius: 0px 0px 4px 4px;
 /*позиционируем крестик(кнопку закрытия)*/
 .btn-close {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: -8px;
+    right: -8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -1127,6 +1135,15 @@ border-radius: 0px 0px 4px 4px;
     /*border: 1px solid var(--main-color);*/
     margin-right: auto;
     margin-left: auto;
+    /*outline: 1px solid red;*/
+}
+.form-field input {
+    margin: 0;
+    padding: 0;
+    border-radius: 1px;
+}
+.form-field label {
+    margin-bottom: 5px;
 }
 /*стилизация модалки*/
 .form-field input::placeholder {

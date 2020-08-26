@@ -420,11 +420,9 @@
         <form class="form-footer-icon">
               <label for="email">Подпишитесь на рассылку</label>         
               <input type="email" name="email" id="email" />
-              <button type="submit" class="foot-btn">Подписаться
-                
+              <button type="submit" class="foot-btn">Подписаться                
               </button>                 
-        </form>
-        
+        </form>        
       </div>
   </footer>
 <!--бекдроп для модального окна-->
@@ -441,8 +439,8 @@
     
   <!-- окно модальное -->
       <form class="js-speaker-form" autocomplete="off" >
-        <div class="form-field"> 
-          <!--поле ввода имени в модалке-->                   
+          <!--поле ввода имени в модалке--> 
+        <div class="form-field">                   
           <input class="form-input" type="text" name="name" id="name" placeholder=" "/>
           <label for="name" class="form-label">Имя</label>
           <span class="icon-small">
@@ -473,6 +471,7 @@
         </div>
         <!--поле ввода комментария в модалке-->
         <div class="form-field">
+          <input class="form-input" type="text" name="textarea" id="textarea" placeholder=" ">
           <label for="comment">Комментарий</label>
           <textarea class="comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
         </div>
@@ -500,15 +499,17 @@
 <!--скрипт для отправки модаки на сервер-->
   <script>
     (( ) => {
-        document
-           .querySelector('.js-speaker-form')
-           .addEventListener('submit', e => {
-               e.preventDefault( );
+      document
+        .querySelector('.js-speaker-form')
+        .addEventListener('submit', e => {
+           e.preventDefault( );
 
-               new FormData(e.currentTarget).forEach((value, name) =>
-                 console.log('${name}: ${value}'),
-                );
-           });
+           new FormData(e.currentTarget).forEach((value, name) =>
+             console.log('${name}: ${value}'),
+            );
+
+            e.currentTarget.reset( );
+         });
     })( );
 </script> 
   </body>
