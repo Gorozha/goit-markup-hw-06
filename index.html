@@ -418,8 +418,13 @@
       <!--подписка в футере-->
       <div class="form-footer">
         <form class="form-footer-icon">
-              <label for="email">Подпишитесь на рассылку</label>         
-              <input type="email" name="email" id="email" />
+              <label for="email" class="form-label-foot">Подпишитесь на рассылку</label> 
+              <span class="btn-telega">
+              <svg  width="32" height="32">
+                <use href="./images/symbol-defs5.svg#icon-telegblack"> alt="icon" </use>
+              </svg>
+            </span>        
+              <input class="form-input-foot" type="email" name="email" id="email" placeholder="E-mail"/> 
               <button type="submit" class="foot-btn">Подписаться                
               </button>                 
         </form>        
@@ -496,7 +501,7 @@
   </div>
 
   <script src="./js/modal.js"></script>
-<!--скрипт для отправки модаки на сервер-->
+<!--скрипт для отправки модалки на сервер-->
   <script>
     (( ) => {
       document
