@@ -415,6 +415,7 @@
               </div>
           </div>
       </div>
+      <!--подписка в футере-->
       <div class="form-footer">
         <form class="form-footer-icon">
               <label for="email">Подпишитесь на рассылку</label>         
@@ -426,7 +427,7 @@
         
       </div>
   </footer>
-
+<!--бекдроп для модального окна-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="btn-close" data-modal-close>
@@ -440,7 +441,8 @@
     
   <!-- окно модальное -->
       <form class="js-speaker-form" autocomplete="off" >
-        <div class="form-field">                    
+        <div class="form-field"> 
+          <!--поле ввода имени в модалке-->                   
           <input class="form-input" type="text" name="name" id="name" placeholder=" "/>
           <label for="name" class="form-label">Имя</label>
           <span class="icon-small">
@@ -449,7 +451,7 @@
             </svg>
           </span>
         </div>
-
+        <!--поле ввода тел.номера в модалке-->
         <div class="form-field">                   
           <input class="form-input" type="tel" name="tel" id="tel" placeholder=" "/>
           <label for="tel" class="form-label">Телефон</label>
@@ -459,7 +461,7 @@
             </svg>
           </span>
         </div>
-
+        <!--поле ввода мыла в модалке-->
         <div class="form-field">                  
           <input class="form-input" type="email" name="mail" id="mail" placeholder=" "/>
           <label for="mail" class="form-label">Почта</label>
@@ -469,7 +471,7 @@
             </svg>
           </span> 
         </div>
-      
+        <!--поле ввода комментария в модалке-->
         <div class="form-field">
           <label for="comment">Комментарий</label>
           <textarea class="comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
@@ -492,6 +494,7 @@
   </div>
 
   <script src="./js/modal.js"></script>
+
   <script>
     (( ) => {
         document
