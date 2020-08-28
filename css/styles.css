@@ -433,6 +433,8 @@ header*/
 /* портфолио кнопки */
 .box-button {
     display: flex;
+    justify-content: space-between;
+    text-align: center;
     margin-bottom: 34px;
     width: 611px;
     margin-right: auto;
@@ -443,21 +445,35 @@ header*/
 .list-buttons li:not(:last-child) {
     margin-right: 8px;
 }
+/* сброс цвета портфолио кнопки*/
+.butt a {
+    color: transparent;/**/
+    padding: 0;
+    margin: 0;
+}
 /* портфолио кнопки */
 .butt {
     display: flex;
     justify-content: center ;
+    height: 100%;
     height: 38px;
-    border-color: #F5F4FA;
-    border-style: solid;
-    border-width: 1px;
+    width: 100%;
+    border: 1px solid transparent;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-color);
     background: #F5F4FA;
     border-radius: 4px;
     cursor: pointer;
-    margin: auto;
+    margin-right: 8px;
 }
 /* портфолио кнопки */
-.butt :hover {
+.butt a:hover {
     background: var(--accent-color);
     color: var(--white-color);
     box-sizing: inherit;
